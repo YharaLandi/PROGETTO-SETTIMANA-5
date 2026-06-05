@@ -19,3 +19,5 @@ window.addEventListener('scroll', function () {
 
   }
 });
+// setProperty scrive la variabile direttamente nell'HTML con specificità maggiore,
+// sovrascrivendo il valore definito nel :root del CSS. In questo modo, quando scrollo, cambio dinamicamente i colori dell'header e dei link. Se scrollY è maggiore o uguale a 100, imposto colori scuri; altrimenti, ripristino i colori chiari.
