@@ -47,6 +47,9 @@ a {
 
 /*HEADER*/
 #site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
   background: var(--header-bg);
   border-bottom: 1px solid var(--header-border);
   padding: 16px 24px 12px;
@@ -277,9 +280,6 @@ a {
 @media (min-width: 768px) {
 
   #site-header {
-    position: sticky;
-    top: 0;
-    z-index: 100;
     padding: 0;
   }
 
@@ -303,11 +303,10 @@ a {
     justify-content: center;
   }
 
-.card {
-  flex: 1 1 calc(50% - 20px);
-  max-width: calc(50% - 10px);
-}
-/*calc() permette di mischiare unità diverse (% e px). 50% = metà del contenitore, -20px = sottrae il gap intero dalla base, max-width con -10px = limita la larghezza a metà gap per card. Necessario da tablet in poi perché le card passano da colonna a riga e il browser ha bisogno di sapere quanto deve essere larga ciascuna.*/
+  .card {
+    flex: 1 1 calc(50% - 20px);
+    max-width: calc(50% - 10px);
+  }
 
   #site-footer {
     display: flex;
